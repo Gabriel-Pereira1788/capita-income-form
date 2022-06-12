@@ -63,6 +63,8 @@ app.post("/register", (req, res) => {
 	dataResponse(dataReq, res);
 });
 
-app.listen(3001, () => {
-	console.log("Rodando na porta 3001");
-});
+app.get('/',(req,res)=>{
+	return res.json({message:'Server is up'})
+})
+
+app.listen(3001)
