@@ -38,23 +38,23 @@ const Form = ({ setDisplay, displayForm, setDisplayResult, setData }) => {
 		resolver: yupResolver(validations),
 	});
 
-	const onSubmit = ({ name, cep, income, dependents }) => {
-		Axios.post(url, {
-			name: name,
-			cep: cep,
-			income: income,
-			dependents: dependents,
-		})
-			.then((response) => setData(response.data))
-			.then(() => {
-				setDisplayResult(true);
-				const widthWindow = document.body.getBoundingClientRect().width;
-				if (widthWindow <= 640) {
-					setDisplay(false);
-				}
-			})
-			.catch((err) => console.log(err));
-	};
+	// const onSubmit = ({ name, cep, income, dependents }) => {
+	// 	Axios.post(url, {
+	// 		name: name,
+	// 		cep: cep,
+	// 		income: income,
+	// 		dependents: dependents,
+	// 	})
+	// 		.then((response) => setData(response.data))
+	// 		.then(() => {
+	// 			setDisplayResult(true);
+	// 			const widthWindow = document.body.getBoundingClientRect().width;
+	// 			if (widthWindow <= 640) {
+	// 				setDisplay(false);
+	// 			}
+	// 		})
+	// 		.catch((err) => console.log(err));
+	// };
 
 	return (
 		<div

@@ -53,17 +53,17 @@ const dataResponse = async (dataRequest, res) => {
 	}
 };
 
-app.post("/register", (req, res) => {
-	const dataReq = {// Dados recebidos pela camada do Client
-		name: req.body.name,
-		cep: req.body.cep,
-		income: req.body.income,
-		dependents: req.body.dependents,
-	};
-	dataResponse(dataReq, res);
-});
+// app.post("/register", (req, res) => {
+// 	const dataReq = {// Dados recebidos pela camada do Client
+// 		name: req.body.name,
+// 		cep: req.body.cep,
+// 		income: req.body.income,
+// 		dependents: req.body.dependents,
+// 	};
+// 	dataResponse(dataReq, res);
+// });
 
-app.get('/',(req,res)=>{
+app.get('/atualizou',(req,res)=>{
 	return res.json({message:'Server is up'})
 })
 
