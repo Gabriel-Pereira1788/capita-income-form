@@ -1,0 +1,35 @@
+.section-form {
+    display: inline-block;
+    min-width: 317px;
+    width: 100%;
+    max-width: 420px;
+    height: 100%;
+    animation-duration: 1s;
+    animation-name: displayOn;
+    animation-direction: normal;
+    z-index: 1;
+}
+form {
+    width: 77%;
+    padding: 2em;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+@media (max-width: 640px) {
+    .section-form {
+        max-width: none;
+        position: absolute;
+    }
+}
+
+@keyframes displayOn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
