@@ -64,7 +64,7 @@ const dataResponse = async (dataRequest, res) => {
 // });
 
 app.get('/',(req,res)=>{
-	return res.send('hello')
+	return res.json({message:'serverisup'})
 })
 
-app.listen(3001)
+app.listen(3333)
