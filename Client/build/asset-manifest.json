@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f1da833.css",
-    "main.js": "/static/js/main.247e890e.js",
-    "static/js/787.0c8d31d2.chunk.js": "/static/js/787.0c8d31d2.chunk.js",
-    "static/media/image-main.jpg": "/static/media/image-main.0c667b5803fb034e07ea.jpg",
-    "static/media/image-card.jpg": "/static/media/image-card.74c01103c540a5c883d4.jpg",
-    "index.html": "/index.html",
-    "main.2f1da833.css.map": "/static/css/main.2f1da833.css.map",
-    "main.247e890e.js.map": "/static/js/main.247e890e.js.map",
-    "787.0c8d31d2.chunk.js.map": "/static/js/787.0c8d31d2.chunk.js.map"
+    "main.css": "/capita-income-form/Client/static/css/main.6a02a5cd.css",
+    "main.js": "/capita-income-form/Client/static/js/main.cb1f8cdc.js",
+    "static/js/787.0c8d31d2.chunk.js": "/capita-income-form/Client/static/js/787.0c8d31d2.chunk.js",
+    "static/media/image-main.jpg": "/capita-income-form/Client/static/media/image-main.0c667b5803fb034e07ea.jpg",
+    "static/media/image-card.jpg": "/capita-income-form/Client/static/media/image-card.74c01103c540a5c883d4.jpg",
+    "index.html": "/capita-income-form/Client/index.html",
+    "main.6a02a5cd.css.map": "/capita-income-form/Client/static/css/main.6a02a5cd.css.map",
+    "main.cb1f8cdc.js.map": "/capita-income-form/Client/static/js/main.cb1f8cdc.js.map",
+    "787.0c8d31d2.chunk.js.map": "/capita-income-form/Client/static/js/787.0c8d31d2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f1da833.css",
-    "static/js/main.247e890e.js"
+    "static/css/main.6a02a5cd.css",
+    "static/js/main.cb1f8cdc.js"
   ]
 }

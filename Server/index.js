@@ -65,6 +65,4 @@ app.post("/register", (req, res) => {
 	dataResponse(dataReq, res);
 });
 
-
-
 app.listen(3333)

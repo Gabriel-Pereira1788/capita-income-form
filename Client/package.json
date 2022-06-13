@@ -2,8 +2,7 @@
   "name": "capita-income-form",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabriel-pereira1788.github.io/capita-income-form/Client/",
-  "dependencies": {
+    "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@hookform/resolvers": "^2.9.1",
@@ -26,7 +25,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "publicar": "npm run build && ./node_modules/.bin/gh-pages -d build"
+
   },
   "eslintConfig": {
     "extends": [
