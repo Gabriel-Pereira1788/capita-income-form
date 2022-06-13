@@ -63,8 +63,8 @@ const dataResponse = async (dataRequest, res) => {
 // 	dataResponse(dataReq, res);
 // });
 
-app.get('/atualizou',(req,res)=>{
-	return res.json({message:'Server is up'})
+app.get('/',(req,res)=>{
+	return res.send('hello')
 })
 
 app.listen(3001)
