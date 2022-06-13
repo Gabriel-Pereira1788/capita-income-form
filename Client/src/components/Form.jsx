@@ -12,7 +12,8 @@ import { useForm } from "react-hook-form";
 import { ValidationCep, ValidationIncome } from "../utils/validations.js";
 
 const Form = ({ setDisplay, displayForm, setDisplayResult, setData }) => {
-	const url = "http://localhost:3001/register";
+	const url = "http://18.230.196.144:3333/register";
+	const urlAlternative="http://localhost:3333/register"
 
 	const validations = yup.object().shape({
 		name: yup.string(),
@@ -38,23 +39,23 @@ const Form = ({ setDisplay, displayForm, setDisplayResult, setData }) => {
 		resolver: yupResolver(validations),
 	});
 
-	// const onSubmit = ({ name, cep, income, dependents }) => {
-	// 	Axios.post(url, {
-	// 		name: name,
-	// 		cep: cep,
-	// 		income: income,
-	// 		dependents: dependents,
-	// 	})
-	// 		.then((response) => setData(response.data))
-	// 		.then(() => {
-	// 			setDisplayResult(true);
-	// 			const widthWindow = document.body.getBoundingClientRect().width;
-	// 			if (widthWindow <= 640) {
-	// 				setDisplay(false);
-	// 			}
-	// 		})
-	// 		.catch((err) => console.log(err));
-	// };
+	const onSubmit = ({ name, cep, income, dependents }) => {
+		Axios.post(url, {
+			name: name,
+			cep: cep,
+			income: income,
+			dependents: dependents,
+		})
+			.then((response) => setData(response.data))
+			.then(() => {
+				setDisplayResult(true);
+				const widthWindow = document.body.getBoundingClientRect().width;
+				if (widthWindow <= 640) {
+					setDisplay(false);
+				}
+			})
+			.catch((err) => console.log(err));
+	};
 
 	return (
 		<div

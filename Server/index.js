@@ -1,6 +1,8 @@
 /*
--Para subir esta aplicação em um servidor local digite o comando 'npm run devStart'
-no terminal.
+- A aplicação esta sendo executado em um servidor externo caso haja algum problema troque para a variavel 'urlAlternative'
+no metodo Axios que esta localizado no componente 'Form.jsx'. Apos a troca utilize npm run devStart no terminal
+nesta pasta.
+
 */
 
 const express = require("express");
@@ -65,6 +67,4 @@ app.post("/register", (req, res) => {
 
 
 
-app.listen(3333,() => {
-	console.log('rodando na porta 3333')
-})
+app.listen(3333)
